@@ -80,7 +80,6 @@ process.env["OPENCODE_DB"] = ":memory:"
 
 // Now safe to import from src/
 const { Log } = await import("../src/util")
-await import("../src/v2/session-event")
 const { initProjectors } = await import("../src/server/projectors")
 
 void Log.init({
